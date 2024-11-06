@@ -9,10 +9,12 @@ A aplicação consistem em fazer uma Restful API em Python que faça, inicialmen
 ![Documentacao API1](https://github.com/user-attachments/assets/df59fe42-5a6b-431b-89da-fb7390825121)
 ![image](https://github.com/user-attachments/assets/0138a713-6594-4fc7-b545-ef7d6c7f9349)
 
-## Fluxograma Simplicidado da API
+[Vídeo Demonstrativo da API em funcionamento](https://drive.google.com/file/d/1WF6JwfHqtUhacZnv-tOqXXQmnwWN0iuK/view?usp=sharing)
+
+## Fluxograma Simplificado da API
 ![image](https://github.com/user-attachments/assets/6782a9ae-ce63-45b7-bed1-f0238e4a4559)
 
-## Técnologias Utilizadas
+## Tecnologias Utilizadas
 * Python
 * Flask
 * BeautifulSoup
