@@ -1,0 +1,100 @@
+openapi: 3.0.1
+info:
+  title: API Vitivinicultura EMBRAPA
+  description: API que consulta informações de Produção, Processamento, Comercialização, Importação e Exportação no site de vitivinicultura da EMBRAPA.
+  version: 0.0.1
+  contact:
+    name: Contato com o desenvolvedor
+    email: veridiano.c@gmail.com
+  license:
+    name: GPLv3
+    url: https://www.gnu.org/licenses/gpl-3.0.html
+servers:
+-  url: http://127.0.0.1:5000
+   description: API de Teste
+paths:
+  /api/producao:
+    get:
+      summary: Retorna dados de Produção - Produto e quantidade produzida
+      responses:
+        200:
+          description: Sucesso
+          content:
+            aplication/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    produto:
+                      type: string
+                    quantidade:
+                      type: number
+  /api/processamento:
+    get:
+      summary: Retorna dados de Processamento das Uvas - Tipo da uva e quantidade processada
+      responses:
+        200:
+          description: Sucesso
+          content:
+            aplication/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    uva:
+                      type: string
+                    quantidade processada:
+                      type: number
+  /api/comercializacao:
+    get:
+      summary: Retorna dados de Comercilização - Produto e quantidade comercilizada
+      responses:
+        200:
+          description: Sucesso
+          content:
+            aplication/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    produto:
+                      type: string
+                    quantidade comercilizada:
+                      type: number
+  /api/importacao:
+    get:
+      summary: Retorna dados de Importação - País de importação, quantidade e valor do que foi importado
+      responses:
+        200:
+          description: Sucesso
+          content:
+            aplication/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    pais:
+                      type: string
+                    quantidade importada:
+                      type: number
+                    valor importado:
+                      type: number
+  /api/exportacao:
+    get:
+      summary: Retorna dados de Exportacão - País para onde foi exportado, quantidade e valor do que foi exportado
+      responses:
+        200:
+          description: Sucesso
+          content:
+            aplication/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    pais:
+                      type: string
+                    quantidade importada:
+                      type: number
+                    valor importado:
+                      type: number
+
